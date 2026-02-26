@@ -6,16 +6,20 @@ import {
   MdPeopleAlt,
 } from "react-icons/md";
 import "./App.css";
-import { FiHome } from "react-icons/fi";
-import { IoPersonOutline } from "react-icons/io5";
+import { FiDownload, FiHome } from "react-icons/fi";
+import { IoPersonOutline, IoSearch } from "react-icons/io5";
 import { IoIosPeople } from "react-icons/io";
 import { CgNotes } from "react-icons/cg";
 import { HiOutlineChartPie } from "react-icons/hi";
 import { TbSettings2 } from "react-icons/tb";
+import { BiFilterAlt } from "react-icons/bi";
+import { HiOutlineSquares2X2 } from "react-icons/hi2";
+import { CiGrid2H } from "react-icons/ci";
+import { GoPlus } from "react-icons/go";
 
 function App() {
   return (
-    <div className="grid grid-cols-[25%_75%] bg-[whitesmoke] h-screen w-screen">
+    <div className="grid grid-cols-[25%_75%] bg-[whitesmoke] h-[200vh] w-screen">
       <div className="w-full">
         {/* Side Menu */}
         <div className="bg-[rgba(61,57,54,1)] m-4 rounded-[20px] h-[150vh] flex flex-col justify-between">
@@ -116,6 +120,44 @@ function App() {
             </div>
           </div>
         </header>
+
+        {/* Hero Section */}
+        <main className="h-100vh bg-[rgba(255,255,255,1)] m-4 rounded-[20px]">
+          <div className="w-full flex items-center justify-betweem">
+            <div className="relative w-full">
+              <div className="absolute bottom-10.5 left-10">
+                <IoSearch size={16} />
+              </div> 
+              <input
+                className="m-6 px-4 py-3.5 border border-[rgba(229,229,228,1)] rounded-[40px] text-3.5 leading-[100%] tracking-[-2%] w-[30vw] ps-12"
+                type="text"
+                placeholder="Search by Employee Name or Number" />
+            </div>
+
+            <div className="flex items-center justify-end w-full m-6 gap-2.5">
+              <div className="border border-[#E5E5E4] p-3 rounded-[14px]">
+                <FiDownload size={24}/>
+              </div>
+              <div className="border border-[#E5E5E4] p-3 rounded-[14px]">
+                <BiFilterAlt size={24}/>
+              </div>
+              <div className="bg-[#3D3936] p-3 rounded-[14px] text-white">
+                <GoPlus size={24}/>
+              </div>
+              <div className="flex items-center border border-[#E5E5E4] gap-1 p-1 rounded-[14px]">
+                <div className="bg-[#3D3936] p-2 rounded-xl text-white">
+                  <HiOutlineSquares2X2 size={24}/>
+                </div>
+                <div className="p-2 rounded-xl">
+                  <CiGrid2H size={24}/>
+                </div>
+                <div className="p-2 rounded-xl">
+                  <img src="../images/hierarchy.png" alt="Hierarchy Icon" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
       </div>
     </div>
   );
