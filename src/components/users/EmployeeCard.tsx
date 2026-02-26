@@ -85,10 +85,11 @@ export default function AllUsers() {
 
                         <p className="text-sm text-[#947550] leading-[100%] tracking-[-2%] mt-2">{user.role}</p>
 
-                        <div className="flex justify-center gap-2 mt-2">
-                            <span className="w-2 h-2 bg-yellow-400 rounded-full"></span>
-                            <span className="w-2 h-2 bg-green-400 rounded-full"></span>
-                            <span className="w-2 h-2 bg-blue-400 rounded-full"></span>
+                        <div className="flex justify-center gap-1 mt-2">
+                            <span className="w-2.5 h-2.5 bg-[#FFC83E] rounded-full"></span>
+                            <span className="w-2.5 h-2.5 bg-[#70D32E] rounded-full"></span>
+                            <span className="w-2.5 h-2.5 bg-[#6194EC] rounded-full"></span>
+                            <span className="w-2.5 h-2.5 bg-[#FB8C3D] rounded-full"></span>
                         </div>
                     </div>
                 </div>
