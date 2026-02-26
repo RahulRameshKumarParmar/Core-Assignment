@@ -7,7 +7,7 @@ type EmployeeCardProps = {
 export default function AllUsers() {
     const users: EmployeeCardProps[] = [
         {
-            image: "../images/people/Ethan Lee.png",
+            image: "/images/people/Ethan Lee.png",
             name: "Ethan Lee",
             role: "IT Specialist",
         },
@@ -17,22 +17,22 @@ export default function AllUsers() {
             role: "Marketing Manager",
         },
         {
-            image: "../images/people/Micheal Shaun.png",
+            image: "/images/people/Micheal Shaun.png",
             name: "Micheal Shaun",
             role: "Sales Director",
         },
         {
-            image: "../images/people/Liam Carter.png",
+            image: "/images/people/Liam Carter.png",
             name: "Liam Carter",
             role: "Product Designer",
         },
         {
-            image: "../images/people/Grace Kim.png",
+            image: "/images/people/Grace Kim.png",
             name: "Grace Kim",
             role: "Customer Lead",
         },
         {
-            image: "../images/people/Noah Williams.png",
+            image: "/images/people/Noah Williams.png",
             name: "Noah Williams",
             role: "Finance Head",
         },

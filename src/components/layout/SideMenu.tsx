@@ -12,7 +12,7 @@ export default function SideMenu() {
             <div>
                 {/* Brand Logo */}
                 <div className="flex items-center justify-between px-5 py-6">
-                    <img src="images/icons/Brand-Name.png" />
+                    <img src="/images/icons/Brand-Name.png" />
                     <button className="cursor-pointer">
                         <MdKeyboardDoubleArrowLeft size={25} className="text-white" />
                     </button>
