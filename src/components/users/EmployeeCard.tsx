@@ -12,7 +12,7 @@ export default function AllUsers() {
             role: "IT Specialist",
         },
         {
-            image: "../images/people/Emily Baker.png",
+            image: "/images/people/Emily Baker.png",
             name: "Emily Baker",
             role: "Marketing Manager",
         },
@@ -37,32 +37,32 @@ export default function AllUsers() {
             role: "Finance Head",
         },
         {
-            image: "../images/people/Isabella Rossi.png",
+            image: "/images/people/Isabella Rossi.png",
             name: "Isabella Rossi",
             role: "Operations Manager",
         },
         {
-            image: "../images/people/Ava Thompson.png",
+            image: "/images/people/Ava Thompson.png",
             name: "Ava Thompson",
             role: "HR Executive",
         },
         {
-            image: "../images/people/Micheal Shaun.png",
+            image: "/images/people/Micheal Shaun.png",
             name: "Micheal Shaun",
             role: "Sales Director",
         },
         {
-            image: "../images/people/Liam Carter.png",
+            image: "/images/people/Liam Carter.png",
             name: "Liam Carter",
             role: "Product Designer",
         },
         {
-            image: "../images/people/Grace Kim.png",
+            image: "/images/people/Grace Kim.png",
             name: "Grace Kim",
             role: "Customer Lead",
         },
         {
-            image: "../images/people/Noah Williams.png",
+            image: "/images/people/Noah Williams.png",
             name: "Noah Williams",
             role: "Finance Head",
         },
