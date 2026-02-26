@@ -14,14 +14,14 @@ export default function HeaderSection() {
                     <MdAccessTime size={24} />
                     02:03:02
                     <div className="bg-[rgba(247,247,247,1)] p-2 rounded-[40px]">
-                        <img src="../images/notes.png" alt="Note With Pen Icon" />
+                        <img src="images/icons/notes.png" alt="Note With Pen Icon" />
                     </div>
                 </div>
                 <div className="border border-[rgba(229,229,228,1)]  rounded-[40px] p-3">
-                    <img src="../images/drive.png" alt="Drive Icon" />
+                    <img src="images/icons/drive.png" alt="Drive Icon" />
                 </div>
                 <div>
-                    <img src="../images/profile.png" alt="Profile Photo" />
+                    <img src="images/icons/profile.png" alt="Profile Photo" />
                 </div>
             </div>
         </header>

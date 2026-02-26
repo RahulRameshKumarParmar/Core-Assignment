@@ -36,7 +36,7 @@ export default function Toolbar() {
                         <CiGrid2H size={24} />
                     </div>
                     <div className="p-2 rounded-xl">
-                        <img src="../images/hierarchy.png" alt="Hierarchy Icon" />
+                        <img src="images/icons/hierarchy.png" alt="Hierarchy Icon" />
                     </div>
                 </div>
             </div>
