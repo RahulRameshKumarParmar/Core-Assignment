@@ -1,5 +1,6 @@
 import {
   MdAccessTime,
+  MdKeyboardArrowLeft,
   MdKeyboardArrowRight,
   MdKeyboardDoubleArrowLeft,
   MdOutlinePersonAddAlt,
@@ -16,10 +17,11 @@ import { BiFilterAlt } from "react-icons/bi";
 import { HiOutlineSquares2X2 } from "react-icons/hi2";
 import { CiGrid2H } from "react-icons/ci";
 import { GoPlus } from "react-icons/go";
+import AllUsers from "./components/EmployeeCard";
 
 function App() {
   return (
-    <div className="grid grid-cols-[25%_75%] bg-[whitesmoke] h-[200vh] w-screen">
+    <div className="grid grid-cols-[25%_75%] bg-[whitesmoke] h-[155vh] w-screen">
       <div className="w-full">
         {/* Side Menu */}
         <div className="bg-[rgba(61,57,54,1)] m-4 rounded-[20px] h-[150vh] flex flex-col justify-between">
@@ -95,7 +97,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="w-full font-['Poppins']">
+      <div className="w-full font-['Poppins'] overflow-y-auto">
         {/* Header Section */}
         <header className="bg-[rgba(255,255,255,1)] m-4 rounded-[20px] flex items-center justify-between p-[16px_16px_16px_24px]">
           {/* Heading */}
@@ -127,7 +129,7 @@ function App() {
             <div className="relative w-full">
               <div className="absolute bottom-10.5 left-10">
                 <IoSearch size={16} />
-              </div> 
+              </div>
               <input
                 className="m-6 px-4 py-3.5 border border-[rgba(229,229,228,1)] rounded-[40px] text-3.5 leading-[100%] tracking-[-2%] w-[30vw] ps-12"
                 type="text"
@@ -136,25 +138,56 @@ function App() {
 
             <div className="flex items-center justify-end w-full m-6 gap-2.5">
               <div className="border border-[#E5E5E4] p-3 rounded-[14px]">
-                <FiDownload size={24}/>
+                <FiDownload size={24} />
               </div>
               <div className="border border-[#E5E5E4] p-3 rounded-[14px]">
-                <BiFilterAlt size={24}/>
+                <BiFilterAlt size={24} />
               </div>
               <div className="bg-[#3D3936] p-3 rounded-[14px] text-white">
-                <GoPlus size={24}/>
+                <GoPlus size={24} />
               </div>
               <div className="flex items-center border border-[#E5E5E4] gap-1 p-1 rounded-[14px]">
                 <div className="bg-[#3D3936] p-2 rounded-xl text-white">
-                  <HiOutlineSquares2X2 size={24}/>
+                  <HiOutlineSquares2X2 size={24} />
                 </div>
                 <div className="p-2 rounded-xl">
-                  <CiGrid2H size={24}/>
+                  <CiGrid2H size={24} />
                 </div>
                 <div className="p-2 rounded-xl">
                   <img src="../images/hierarchy.png" alt="Hierarchy Icon" />
                 </div>
               </div>
+            </div>
+          </div>
+
+          {/* Employee Cards */}
+          <div className="h-[107vh] overflow-y-auto">
+            <AllUsers />
+          </div>
+
+          {/* Pagination */}
+          <div className="flex items-center gap-2.5 p-3 bg-[#FFFFFF] rounded-b-[20px]">
+            <div className="flex items-center gap-4">
+
+              <span
+                className="leading-[100%] tracking-[-2%] text-sm font-medium text-[#3D3936]">
+                Rows per page:
+              </span>
+
+              <select name="rows-per-page" className="px-3 py-2 border border-[#E5E5E4] rounded-xl text-[#3D3936] text-sm leading-[100%] tracking-[-2%]">
+                <option value="100">100</option>
+                <option value="75">75</option>
+                <option value="50">50</option>
+                <option value="25">25</option>
+              </select>
+
+              <p className="text-[#3D3936] text-sm leading-[100%] tracking-[-2%]">1-100 of 500</p>
+              <button className="text-gray-500">
+                <MdKeyboardArrowLeft size={16}/>
+              </button>
+              <button>
+                <MdKeyboardArrowRight size={16}/>
+              </button>
             </div>
           </div>
         </main>
