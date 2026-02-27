@@ -6,10 +6,9 @@ import Pagination from "../components/users/Pagination";
 
 export default function Dashboard() {
   return (
-    <div className="grid grid-cols-[25%_75%] bg-[whitesmoke] h-[155vh] w-screen">
-
+    <div className="grid grid-cols-1 sm:grid-cols-[25%_75%] bg-[whitesmoke] h-[155vh] w-screen">
       {/* Side Menu */}
-      <div className="w-full">
+      <div className="w-[75%] sm:w-full relative">
         <SideMenu />
       </div>
 
@@ -19,7 +18,6 @@ export default function Dashboard() {
 
         {/* Hero Section */}
         <main className="h-100vh bg-[rgba(255,255,255,1)] m-4 rounded-[20px]">
-
           {/* Toolbar */}
           <Toolbar />
 
