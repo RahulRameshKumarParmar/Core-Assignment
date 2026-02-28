@@ -25,7 +25,7 @@ export default function SideMenu() {
       </div>
       
       <div
-        className={`bg-[rgba(61,57,54,1)] mt-[20%] mx-1 sm:m-4 rounded-none sm:rounded-[20px] h-[70vh] sm:h-[150vh] flex flex-col justify-between transition-transform absolute -right-[35%] sm:relative ${showMenu ? 'top-[30%]' : 'top-500'} sm:right-0 sm:top-0 z-10`}
+        className={`bg-[rgba(61,57,54,1)] mt-[20%] mx-1 sm:m-4 rounded-none sm:rounded-[20px] h-[70vh] sm:h-[150vh] flex flex-col justify-between transition-transform absolute -right-[35%] sm:relative ${showMenu ? 'top-[30%]' : '-top-300'} sm:right-0 sm:top-0 z-10`}
       >
         <div>
           {/* Brand Logo */}

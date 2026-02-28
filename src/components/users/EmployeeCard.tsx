@@ -71,7 +71,7 @@ export default function AllUsers() {
     return (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 m-6">
             {users.map((user, index) => (
-                <div key={index} className="bg-[rgba(255,255,255,1)] rounded-3xl border border-[#E5E5E4] p-6 flex flex-col items-center gap-5">
+                <div key={index} className="bg-[rgba(255,255,255,1)] rounded-3xl border border-[#E5E5E4] p-6 flex flex-col items-center gap-5 m-auto sm:m-0 w-[80%] sm:w-full">
                     <div>
                         <img
                             src={user.image}

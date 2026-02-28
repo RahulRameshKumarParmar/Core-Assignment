@@ -17,7 +17,8 @@ export default function Pagination() {
                     <option value="25">25</option>
                 </select>
 
-                <p className="text-[#3D3936] text-sm leading-[100%] tracking-[-2%]">1-100 of 500</p>
+                <p className="hidden sm:block text-[#3D3936] text-sm leading-[100%] tracking-[-2%]">1-100 of 500</p>
+
                 <button className="text-gray-500">
                     <MdKeyboardArrowLeft size={16} />
                 </button>
